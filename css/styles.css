@@ -41,9 +41,48 @@ body {
     max-height: 675px;
 }
 
-.map {
-    margin: 5px;
-    width: 20px;
-    height: 20px;
-    border: solid 1px #000;
+#board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.path,
+.wall,
+.player,
+.box,
+.goal,
+.goal_in {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+.path {
+    background-image: url('../assets/path.png');
+}
+
+.wall {
+    background-image: url('../assets/wall.png');
+}
+
+.player {
+    background-image: url('../assets/player.png');
+}
+
+.box {
+    background-image: url('../assets/box.png');
+}
+
+.goal {
+    background-image: url('../assets/goal.png');
+}
+
+.goal_in {
+    background-image: url('../assets/goal_in.png');
 }
