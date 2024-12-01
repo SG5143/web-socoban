@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+#root{
+    display: flex;
+}
+
 html,
 body {
     height: 100%;
@@ -58,8 +62,8 @@ body {
 .box,
 .goal,
 .goal_in {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     background-size: cover;
 }
 
@@ -85,4 +89,54 @@ body {
 
 .goal_in {
     background-image: url('../assets/goal_in.png');
+}
+
+.menu-group{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.level-control {
+    display: flex;
+    align-items: center;
+}
+
+#decrease-level, #increase-level {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#decrease-level:hover, #increase-level:hover {
+    background-color: rgb(68, 68, 238);
+}
+
+#set-level{
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#set-level:hover {
+    background-color: rgb(0, 226, 0);
+}
+
+#current-level {
+    font-size: 16px;
+    margin: 0 10px;
+    width: 30px;
+    text-align: center;
 }
